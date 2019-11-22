@@ -11,4 +11,9 @@ class User extends Authenticatable
     use Notifiable;
 
     public $timestamps = false;
+
+    public function country()
+    {
+        return $this->hasOne('App\Country');
+    }
 }
