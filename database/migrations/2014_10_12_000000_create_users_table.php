@@ -15,11 +15,11 @@ class CreateUsersTable extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('country_id')->unsigned();
             $table->string('first_name');
             $table->string('last_name');
             $table->date('start_date');
             $table->decimal('salary');
+            $table->integer('country_id')->unsigned();
 
             $table->foreign('country_id')->references('id')->on('countries');
         });
