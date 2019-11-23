@@ -25,7 +25,7 @@
                     { name: 'last_name' },
                     { name: 'start_date' },
                     { name: 'salary' },
-                    { name: 'country.name', orderable: false, searchable: false},//Relation.columnName
+                    { name: 'country.name', orderable: false},//Relation.columnName
                 ],
             });
         });
