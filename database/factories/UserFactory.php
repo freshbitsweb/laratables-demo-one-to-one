@@ -2,7 +2,6 @@
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 use App\User;
-use App\Country;
 use Faker\Generator as Faker;
 use Illuminate\Support\Str;
 
@@ -19,10 +18,10 @@ use Illuminate\Support\Str;
 
 $factory->define(User::class, function (Faker $faker) {
     return [
-        'country_id' => $faker->unique()->numberBetween(1,20),
         'first_name' => $faker->firstName,
         'last_name' => $faker->lastName,
         'start_date' => $faker->date,
         'salary' => $faker->randomNumber($nbDigits = 6, $strict = true),
+        'country_id' => $faker->unique()->numberBetween(1,20),
     ];
 });

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>One-To-One Relationship LaraTable</title>
+    <title>One-To-One Relationship Laratable</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/dataTables.bootstrap4.min.css">
 </head>
@@ -17,15 +17,15 @@
     <script src="js/dataTables.bootstrap4.min.js"></script>
     <script>
         $(document).ready(function(){
-            $("#one-to-one-lara-table-table").DataTable({
+            $("#one-to-one-laratable").DataTable({
                 serverSide: true,
-                ajax: "{{ route('oneToOne') }}",
+                ajax: "{{ route('one_to_one') }}",
                 columns: [
                     { name: 'first_name' },
                     { name: 'last_name' },
                     { name: 'start_date' },
                     { name: 'salary' },
-                    { name: 'country.name', orderable: false},//Relation.columnName
+                    { name: 'country.name', orderable: false},
                 ],
             });
         });
