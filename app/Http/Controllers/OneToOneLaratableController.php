@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\User;
 use Freshbitsweb\Laratables\Laratables;
 
-class OneToOneLaraTableController extends Controller
+class OneToOneLaratableController extends Controller
 {
     /**
      * Show Table Header column
@@ -15,7 +15,7 @@ class OneToOneLaraTableController extends Controller
      **/
     public function index()
     {
-        return view('oneToOneLaraTable');
+        return view('one_to_one');
     }
 
     /**

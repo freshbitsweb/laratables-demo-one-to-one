@@ -3,7 +3,7 @@
 @section('content')
 
     <div class="container">
-        <table id="one-to-one-lara-table-table" class="table table-bordered table-striped">
+        <table id="one-to-one-laratable" class="table table-bordered table-striped">
             <thead class="thead-dark">
                 <tr>
                     <th>First Name</th>
@@ -13,7 +13,6 @@
                     <th>Country Name</th>
                 </tr>
             </thead>
-            <tbody></tbody>
         </table>
     </div>
 

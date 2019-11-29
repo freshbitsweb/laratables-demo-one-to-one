@@ -11,5 +11,5 @@
 |
 */
 
-Route::get('/', 'OneToOneLaraTableController@index');
-Route::get('oneToOne', 'OneToOneLaraTableController@oneToOneData')->name('oneToOne');
+Route::get('/', 'OneToOneLaratableController@index');
+Route::get('oneToOne', 'OneToOneLaratableController@oneToOneData')->name('one_to_one');
