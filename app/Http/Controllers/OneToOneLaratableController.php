@@ -10,7 +10,6 @@ class OneToOneLaratableController extends Controller
     /**
      * Show Table Header column
      *
-     *
      * @return Illuminate\Http\Response
      **/
     public function index()
@@ -20,7 +19,6 @@ class OneToOneLaratableController extends Controller
 
     /**
      * return data of the One To One Relationship datatables.
-     *
      *
      * @return Jason
      **/
