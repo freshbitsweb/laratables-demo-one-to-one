@@ -18,7 +18,7 @@ class OneToOneLaratableController extends Controller
     }
 
     /**
-     * return data of the One To One Relationship datatables.
+     * Returns data of the One To One Relationship datatables.
      *
      * @return Illuminate\Http\JsonResponse
      **/

@@ -15,7 +15,6 @@ class User extends Model
 
     /**
      * Get the Country that owns the users
-     *
      **/
     public function country()
     {
